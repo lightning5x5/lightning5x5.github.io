@@ -14,8 +14,62 @@
     </div>
     <div class="flex-none lg:hidden">
       <button class="btn btn-square btn-ghost" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g class="nc-int-icon js-nc-int-icon nc-int-icon-rotate">
+              <g class="nc-int-icon-a">
+                  <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#464455" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+              <g class="nc-int-icon-b">
+                  <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#464455" stroke-width="0.9600000000000002" stroke-linecap="round" stroke-linejoin="round"></path>
+              </g>
+          </g>
+          <script>
+              function initIntIcon(i) {
+                  if (i.classList.contains("js-nc-int-icon-loaded")) return;
+                  i.classList.add("js-nc-int-icon-loaded");
+                  i.closest("svg").addEventListener("click", function (n) {
+                      i.classList.toggle("nc-int-icon-state-b");
+                  });
+              };
+              var intIcons = document.getElementsByClassName("js-nc-int-icon");
+              for (var i = 0; intIcons.length > i; i++) {
+                  initIntIcon(intIcons[i]);
+              }
+          </script>
+          <style>
+              .nc-int-icon-rotate {
+                  --animation-duration: 0.4s;
+              }
+              .nc-int-icon {
+                  position: relative;
+              }
+              .nc-int-icon-b {
+                  position: absolute;
+                  top: calc(50% - 0.5em);
+                  left: calc(50% - 0.5em);
+                  opacity: 0;
+              }
+              .nc-int-icon-rotate .nc-int-icon-a,
+              .nc-int-icon-rotate .nc-int-icon-b {
+                  transition: opacity 0s calc(var(--animation-duration) / 2), transform var(--animation-duration);
+                  transform-origin: center center;
+              }
+              .nc-int-icon-rotate .nc-int-icon-b {
+                  transform: rotate(90deg) scale(0.6);
+              }
+              .nc-int-icon-state-b .nc-int-icon-a {
+                  opacity: 0;
+              }
+              .nc-int-icon-state-b .nc-int-icon-b {
+                  opacity: 1;
+              }
+              .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-a {
+                  transform: rotate(-90deg) scale(0.6);
+              }
+              .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
+                  transform: rotate(0);
+              }
+          </style>
         </svg>
       </button>
     </div>
@@ -82,10 +136,10 @@
     </div>
 
     <!-- Border -->
-    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    <hr class="w-48 h-1 mx-auto my-10 bg-gray-100 border-0 rounded dark:bg-gray-700">
 
     <!-- Skills -->
-    <div id="skills" class="w-6/12">
+    <div id="skills" class="w-9/12 md:w-6/12">
       <h2 class="text-3xl font-semibold">Skills</h2>
       <div class="collapse collapse-arrow">
         <input type="checkbox" name="skills-accourdion">
@@ -186,19 +240,19 @@
     </div>
 
     <!-- Border -->
-    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    <hr class="w-48 h-1 mx-auto my-10 bg-gray-100 border-0 rounded dark:bg-gray-700">
 
     <!-- Works -->
-    <div id="works" class="w-6/12">
+    <div id="works" class="w-9/12 md:w-6/12">
       <h2 class="text-3xl font-semibold mb-3">Works</h2>
       <p class="pl-4">Comming soon...</p>
     </div>
 
     <!-- Border -->
-    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    <hr class="w-48 h-1 mx-auto my-10 bg-gray-100 border-0 rounded dark:bg-gray-700">
 
     <!-- Certifications -->
-    <div id="certifications" class="w-6/12">
+    <div id="certifications" class="w-9/12 md:w-6/12">
       <h2 class="text-3xl font-semibold mb-3">Certifications</h2>
       <ul class="list-disc list-inside space-y-1 pl-5">
         <li>2017年10月 基本情報技術者試験 合格</li>
@@ -208,10 +262,10 @@
     </div>
 
     <!-- Border -->
-    <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+    <hr class="w-48 h-1 mx-auto my-10 bg-gray-100 border-0 rounded dark:bg-gray-700">
 
     <!-- Products -->
-    <div id="products" class="w-6/12">
+    <div id="products" class="w-9/12 md:w-6/12">
       <h2 class="text-3xl font-semibold mb-3">Products</h2>
       <p class="pl-4">Comming soon...</p>
     </div>
