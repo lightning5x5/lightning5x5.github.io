@@ -10,3 +10,16 @@
         font-family: IBM Plex Sans JP;
     }
 }
+
+@layer components {
+    .custom-list-item {
+        @apply pl-0;
+    }
+    .custom-list-item > li {
+        @apply relative pl-6;
+    }
+    .custom-list-item > li::before {
+        content: '▹';
+        @apply absolute left-0 top-0 mr-2 text-gray-400;
+    }
+}
