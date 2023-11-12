@@ -22,4 +22,38 @@
         content: '▹';
         @apply absolute left-0 top-0 mr-2 text-gray-400;
     }
+
+    /* navbar のメニューボタン関連 */
+    .nc-int-icon-rotate {
+        --animation-duration: 0.4s;
+    }
+    .nc-int-icon {
+        position: relative;
+    }
+    .nc-int-icon-b {
+        position: absolute;
+        top: calc(50% - 0.5em);
+        left: calc(50% - 0.5em);
+        opacity: 0;
+    }
+    .nc-int-icon-rotate .nc-int-icon-a,
+    .nc-int-icon-rotate .nc-int-icon-b {
+        transition: opacity 0s calc(var(--animation-duration) / 2), transform var(--animation-duration);
+        transform-origin: center center;
+    }
+    .nc-int-icon-rotate .nc-int-icon-b {
+        transform: rotate(90deg) scale(0.6);
+    }
+    .nc-int-icon-state-b .nc-int-icon-a {
+        opacity: 0;
+    }
+    .nc-int-icon-state-b .nc-int-icon-b {
+        opacity: 1;
+    }
+    .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-a {
+        transform: rotate(-90deg) scale(0.6);
+    }
+    .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
+        transform: rotate(0);
+    }
 }

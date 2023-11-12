@@ -5,8 +5,9 @@
   <meta name="description" content="lightning5x5's Portfolio">
   <meta name="author" content="lightning5x5">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/output.css" rel="stylesheet">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="./css/output.css" rel="stylesheet">
+  <script defer src="./js/script.js"></script>
   <title>lightning5x5 - Backend Web Developer</title>
 </head>
 <body>
@@ -26,53 +27,6 @@
                   <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#464455" stroke-width="0.9600000000000002" stroke-linecap="round" stroke-linejoin="round"></path>
               </g>
           </g>
-          <script>
-              function initIntIcon(i) {
-                  if (i.classList.contains("js-nc-int-icon-loaded")) return;
-                  i.classList.add("js-nc-int-icon-loaded");
-                  i.closest("svg").addEventListener("click", function (n) {
-                      i.classList.toggle("nc-int-icon-state-b");
-                  });
-              };
-              var intIcons = document.getElementsByClassName("js-nc-int-icon");
-              for (var i = 0; intIcons.length > i; i++) {
-                  initIntIcon(intIcons[i]);
-              }
-          </script>
-          <style>
-              .nc-int-icon-rotate {
-                  --animation-duration: 0.4s;
-              }
-              .nc-int-icon {
-                  position: relative;
-              }
-              .nc-int-icon-b {
-                  position: absolute;
-                  top: calc(50% - 0.5em);
-                  left: calc(50% - 0.5em);
-                  opacity: 0;
-              }
-              .nc-int-icon-rotate .nc-int-icon-a,
-              .nc-int-icon-rotate .nc-int-icon-b {
-                  transition: opacity 0s calc(var(--animation-duration) / 2), transform var(--animation-duration);
-                  transform-origin: center center;
-              }
-              .nc-int-icon-rotate .nc-int-icon-b {
-                  transform: rotate(90deg) scale(0.6);
-              }
-              .nc-int-icon-state-b .nc-int-icon-a {
-                  opacity: 0;
-              }
-              .nc-int-icon-state-b .nc-int-icon-b {
-                  opacity: 1;
-              }
-              .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-a {
-                  transform: rotate(-90deg) scale(0.6);
-              }
-              .nc-int-icon-rotate.nc-int-icon-state-b .nc-int-icon-b {
-                  transform: rotate(0);
-              }
-          </style>
         </svg>
       </button>
     </div>
@@ -309,10 +263,3 @@
   </footer>
 </body>
 </html>
-
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById('mobileMenu');
-    menu.classList.toggle('hidden');
-  }
-</script>
