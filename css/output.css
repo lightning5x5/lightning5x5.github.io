@@ -454,8 +454,7 @@ html{
   --sf: 265 89% 71%;
   --af: 31 100% 64%;
   --nf: 230 15% 23%;
-  --b2: 231 15% 11%;
-  --b3: 231 15% 4%;
+  --b3: 195 6% 7%;
   --pc: 328 26% 15%;
   --sc: 266 19% 16%;
   --ac: 30 30% 15%;
@@ -478,12 +477,13 @@ html{
   --s: 265 89% 78%;
   --a: 31 100% 71%;
   --n: 230 15% 30%;
-  --b1: 231 15% 18%;
+  --b1: 200 5% 11%;
   --bc: 60 30% 96%;
   --in: 191 97% 77%;
   --su: 135 94% 65%;
   --wa: 65 92% 76%;
   --er: 0 100% 67%;
+  --b2: 195 6% 14%;
 }
 
 html {
@@ -2223,6 +2223,12 @@ details.collapse summary::-webkit-details-marker{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -2265,6 +2271,11 @@ details.collapse summary::-webkit-details-marker{
   border-color: rgb(13 148 136 / var(--tw-border-opacity));
 }
 
+.border-teal-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(20 184 166 / var(--tw-border-opacity));
+}
+
 .bg-base-100{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b1) / var(--tw-bg-opacity));
@@ -2273,6 +2284,11 @@ details.collapse summary::-webkit-details-marker{
 .bg-base-200{
   --tw-bg-opacity: 1;
   background-color: hsl(var(--b2) / var(--tw-bg-opacity));
+}
+
+.bg-base-300{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b3) / var(--tw-bg-opacity));
 }
 
 .bg-gray-100{
@@ -2290,9 +2306,9 @@ details.collapse summary::-webkit-details-marker{
   background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 
-.bg-base-300{
+.bg-teal-500{
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--b3) / var(--tw-bg-opacity));
+  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
 }
 
 .fill-current{
@@ -2457,6 +2473,11 @@ details.collapse summary::-webkit-details-marker{
 .text-teal-600{
   --tw-text-opacity: 1;
   color: rgb(13 148 136 / var(--tw-text-opacity));
+}
+
+.text-teal-500{
+  --tw-text-opacity: 1;
+  color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
 .shadow-md{

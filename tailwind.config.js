@@ -19,6 +19,15 @@ module.exports = {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ['dracula'],
+    themes: [
+      {
+        mytheme: {
+          ...require("daisyui/src/theming/themes")["[data-theme=dracula]"],
+          'base-100': '#1A1C1D',
+          // 第二候補くらい bg-stone-900;
+          'base-200': '#222526'
+        }
+      }
+    ],
   },
 }
