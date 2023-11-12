@@ -2012,6 +2012,14 @@ details.collapse summary::-webkit-details-marker{
   margin: 0.125rem;
 }
 
+.-m-2{
+  margin: -0.5rem;
+}
+
+.-m-2\.5{
+  margin: -0.625rem;
+}
+
 .-mx-10{
   margin-left: -2.5rem;
   margin-right: -2.5rem;
@@ -2167,6 +2175,14 @@ details.collapse summary::-webkit-details-marker{
   width: 100%;
 }
 
+.w-10\/12{
+  width: 83.333333%;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -2285,6 +2301,10 @@ details.collapse summary::-webkit-details-marker{
   border-bottom-width: 6px;
 }
 
+.border-b-5{
+  border-bottom-width: 5px;
+}
+
 .border-teal-500{
   --tw-border-opacity: 1;
   border-color: rgb(20 184 166 / var(--tw-border-opacity));
@@ -2341,6 +2361,14 @@ details.collapse summary::-webkit-details-marker{
 
 .p-px{
   padding: 1px;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-2\.5{
+  padding: 0.625rem;
 }
 
 .px-1{
@@ -2404,6 +2432,10 @@ details.collapse summary::-webkit-details-marker{
   padding-left: 0.125rem;
 }
 
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .font-terminal{
   font-family: VT323;
 }
@@ -2436,6 +2468,10 @@ details.collapse summary::-webkit-details-marker{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-2\.5xl{
+  font-size: 1.625rem;
 }
 
 .font-bold{
@@ -2557,6 +2593,10 @@ details.collapse summary::-webkit-details-marker{
     width: 19.5rem;
   }
 
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+
   .sm\:pb-16{
     padding-bottom: 4rem;
   }
@@ -2567,6 +2607,18 @@ details.collapse summary::-webkit-details-marker{
 
   .sm\:pb-12{
     padding-bottom: 3rem;
+  }
+
+  .sm\:pl-4{
+    padding-left: 1rem;
+  }
+
+  .sm\:pl-5{
+    padding-left: 1.25rem;
+  }
+
+  .sm\:pl-3{
+    padding-left: 0.75rem;
   }
 
   .sm\:text-2\.5xl{
@@ -2611,6 +2663,10 @@ details.collapse summary::-webkit-details-marker{
     width: 33.333333%;
   }
 
+  .lg\:w-6\/12{
+    width: 50%;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -2623,5 +2679,9 @@ details.collapse summary::-webkit-details-marker{
 
   .lg\:pt-\[35\%\]{
     padding-top: 35%;
+  }
+
+  .lg\:pt-14{
+    padding-top: 3.5rem;
   }
 }
