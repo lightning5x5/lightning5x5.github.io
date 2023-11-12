@@ -2087,6 +2087,10 @@ details.collapse summary::-webkit-details-marker{
   margin-top: 0.125rem;
 }
 
+.mt-\[40\%\]{
+  margin-top: 40%;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -2097,6 +2101,10 @@ details.collapse summary::-webkit-details-marker{
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -2213,6 +2221,10 @@ details.collapse summary::-webkit-details-marker{
   animation: blink 1s step-end infinite;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -2239,6 +2251,14 @@ details.collapse summary::-webkit-details-marker{
 
 .justify-between{
   justify-content: space-between;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]){
@@ -2597,6 +2617,10 @@ details.collapse summary::-webkit-details-marker{
     width: 50%;
   }
 
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:pb-16{
     padding-bottom: 4rem;
   }
@@ -2637,6 +2661,10 @@ details.collapse summary::-webkit-details-marker{
 }
 
 @media (min-width: 768px){
+  .md\:mt-\[35\%\]{
+    margin-top: 35%;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2645,12 +2673,20 @@ details.collapse summary::-webkit-details-marker{
     width: 50%;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:pb-16{
     padding-bottom: 4rem;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:mt-\[35\%\]{
+    margin-top: 35%;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -2665,6 +2701,10 @@ details.collapse summary::-webkit-details-marker{
 
   .lg\:w-6\/12{
     width: 50%;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
