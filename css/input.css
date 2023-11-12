@@ -8,6 +8,8 @@
 @layer base {
   html {
     font-family: IBM Plex Sans JP;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
   }
 }
 
