@@ -22,4 +22,7 @@
         content: '▹';
         @apply absolute left-0 top-0 mr-2 text-gray-400;
     }
+    .border-b-6 {
+        border-bottom-width: 6px;
+    }
 }
