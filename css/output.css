@@ -2187,6 +2187,10 @@ details.collapse summary::-webkit-details-marker{
   width: 83.333333%;
 }
 
+.w-8\/12{
+  width: 66.666667%;
+}
+
 .max-w-7xl{
   max-width: 80rem;
 }
@@ -2671,6 +2675,10 @@ details.collapse summary::-webkit-details-marker{
 
   .md\:w-6\/12{
     width: 50%;
+  }
+
+  .md\:w-10\/12{
+    width: 83.333333%;
   }
 
   .md\:grid-cols-2{
