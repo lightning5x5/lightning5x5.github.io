@@ -2067,10 +2067,6 @@ details.collapse summary::-webkit-details-marker{
   height: 13rem;
 }
 
-.h-56{
-  height: 14rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
@@ -2101,10 +2097,6 @@ details.collapse summary::-webkit-details-marker{
 
 .w-52{
   width: 13rem;
-}
-
-.w-56{
-  width: 14rem;
 }
 
 .w-6{
