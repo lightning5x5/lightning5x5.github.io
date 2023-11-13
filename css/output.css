@@ -2075,6 +2075,10 @@ details.collapse summary::-webkit-details-marker{
   height: 25px;
 }
 
+.h-57{
+  height: 14.25rem;
+}
+
 .min-h-0{
   min-height: 0px;
 }
@@ -2113,6 +2117,10 @@ details.collapse summary::-webkit-details-marker{
 
 .w-full{
   width: 100%;
+}
+
+.w-57{
+  width: 14.25rem;
 }
 
 .flex-1{
