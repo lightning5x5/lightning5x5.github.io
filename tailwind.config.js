@@ -21,7 +21,7 @@ module.exports = {
       keyframes: {
         blink: {
           '0%, 100%': { opacity: 0 },
-          '50%': { opacity: 1 }
+          '50%': { opacity: 1 },
         },
       },
       animation: {
@@ -29,19 +29,19 @@ module.exports = {
       },
     },
     fontFamily: {
-      terminal: ['VT323']
-    }
+      terminal: ['VT323'],
+    },
   },
   plugins: [require('daisyui')],
   daisyui: {
     themes: [
       {
         mytheme: {
-          ...require("daisyui/src/theming/themes")["[data-theme=dracula]"],
+          ...require('daisyui/src/theming/themes')['dracula'],
           'base-100': '#1A1C1D',
-          'base-200': '#222526'
+          'base-200': '#222526',
         }
-      }
+      },
     ],
   },
 }
