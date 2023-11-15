@@ -36,11 +36,25 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        dracula: {
           ...require('daisyui/src/theming/themes')['dracula'],
           'base-100': '#1A1C1D',
           'base-200': '#222526',
-        }
+          '.text-title': { '@apply text-neutral-200': '' },
+          '.text-content': { '@apply text-neutral-300': '' },
+          '.text-card-content': { '@apply text-gray-400': '' },
+          '.text-tag': { '@apply text-gray-300': '' },
+          '.bg-tag': { '@apply bg-gray-700': '' },
+        },
+        nord: {
+          ...require('daisyui/src/theming/themes')['nord'],
+          'base-200': '#D8DEE9',
+          '.text-title': { '@apply text-base-content': '' },
+          '.text-content': { '@apply text-base-content': '' },
+          '.text-card-content': { '@apply text-gray-500': '' },
+          '.text-tag': { '@apply text-gray-200': '' },
+          '.bg-tag': { '@apply bg-gray-500': '' },
+        },
       },
     ],
   },
